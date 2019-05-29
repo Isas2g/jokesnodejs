@@ -1,0 +1,144 @@
+.content {
+    text-align: center;
+}
+
+.menu-el {
+    text-align: center;
+    display: inline-block;
+    font-size: 26px;
+    line-height: 50px;
+    width: 230px;
+    height: 60px;
+    color: #fff;
+    transition: .3s;
+    cursor: pointer;
+    margin: 0;
+}
+
+.sec-bg {
+    background: #fff;
+}
+
+.menu-el:hover {
+    background: #fff;
+    color: #000;
+}
+
+.active-menu-el {
+    background: #fff;
+    color: #000;
+}
+
+#infoText,
+#costsText,
+#photoText {
+    margin: 0 auto;
+    text-align: left;
+    max-width: 600px;
+    font-size: 20px;
+}
+
+.sec-inner {
+    font-weight: bolder;
+    color: #fff;
+    background: rgba(0, 0, 0, .6);
+}
+
+#photoText {
+    width: 100%;
+    height: auto;
+}
+
+#infoText ::selection,
+#costsText ::selection {
+    background: #fff;
+    color: #000;
+}
+
+#background-sec-lenskie {
+    background: url(../img/lenskie/lenskie_bg.gif) center center no-repeat;
+}
+
+#background-sec-geyzer {
+    background: url(../img/dolina_geyzerov/dolina_geyz.jpg) center center no-repeat;
+}
+
+#background-sec-baikal {
+    background: url(../img/baikal/baikal_bg.gif) center center no-repeat;
+}
+
+#background-sec-putorana {
+    background: url(../img/plato_putorana/putorana_bg.gif) center center no-repeat;
+}
+
+#background-sec-elbrus {
+    background: url(../img/elbrus/elbrus_bg.gif) center center no-repeat;
+}
+
+#background-sec-altai {
+    background: url(../img/altai/altai_bg.gif) center center no-repeat;
+}
+
+#background-sec-lenskie,
+#background-sec-geyzer,
+#background-sec-baikal,
+#background-sec-putorana,
+#background-sec-elbrus,
+#background-sec-altai {
+    z-index: -2;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sec-inner {
+    z-index: 2;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+#infoText p,
+#hotelsText p {
+    margin-top: 40px;
+}
+
+.non-active {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.slide {
+    margin-bottom: 40px;
+}
+
+.btn-info {
+    margin-bottom: 20px;
+}
+
+#map {
+    width: 100%;
+    height: 480px;
+}
+
+.btn {
+    font-size: 18px;
+}
+
+@media (max-width: 800px) {
+    .menu-el {
+        display: block;
+        width: 100%;
+    }
+    .sec-inner {
+        width: 100%;
+    }
+    #infoText,
+    #costsText,
+    #photoText {
+        width: 100%;
+    }
+}
