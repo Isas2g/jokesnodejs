@@ -17,6 +17,7 @@
 
 .sec-bg {
     background: #fff;
+    opacity: 1;
 }
 
 .menu-el:hover {
@@ -41,7 +42,8 @@
 .sec-inner {
     font-weight: bolder;
     color: #fff;
-    background: rgba(0, 0, 0, .6);
+    background: #000;
+    opacity: .6;
 }
 
 #photoText {
@@ -49,8 +51,8 @@
     height: auto;
 }
 
-#infoText ::selection,
-#costsText ::selection {
+
+#infoText ::selection, #costsText ::selection {
     background: #fff;
     color: #000;
 }

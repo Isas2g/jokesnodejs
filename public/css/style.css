@@ -10,7 +10,6 @@ body {
     font-size: 15px;
     line-height: 1.7;
     color: #878787;
-    overflow-x: hidden;
 }
 
 #title-text {
@@ -890,6 +889,8 @@ figcaption a {
 .content {
     font-family: 'Comfortaa';
 }
+
+
 
 
 /* #Media
