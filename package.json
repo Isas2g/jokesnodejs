@@ -1,7 +1,7 @@
 {
     "name": "master",
     "version": "1.0.0",
-    "description": "This is a website about the best places to visit Russia",
+    "description": "This is a website about the best places to visit in Russia",
     "main": "index.js",
     "scripts": {
         "start": "node src/app.js",
