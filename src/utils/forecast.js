@@ -8,13 +8,13 @@ const forecast = (latitude, longitude, callback) => {
         } else if (body.error) {
             callback(body.error);
         } else {
-            const translateURL = `https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20190528T092939Z.75c9f136e41a89af.0864ee3dcf8aaf41479bfafe1a1810ad1be808f2&text=${body.daily.data[0].summary}&lang=en-ru`;
+            // const translateURL = `https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20190528T092939Z.75c9f136e41a89af.0864ee3dcf8aaf41479bfafe1a1810ad1be808f2&text=${body.daily.data[0].summary}&lang=en-ru`;
 
-            request({ url: translateURL, json: true }, (error, result) => {
-                if (error) return callback(`Невозможно найти перевод.`);
+            // request({ url: translateURL, json: true }, (error, result) => {
+            //     if (error) return callback(`Невозможно найти перевод.`);
 
-                callback(undefined, `${result.body.text[0]}.. Сейчас на месте ${body.currently.temperature} градусов по Цельсию с  ${body.currently.precipProbability * 100}% шансом выпадения осадков. Видимость в ${body.daily.data[0].visibility} метров.`);
-            });
+            callback(undefined, `${result.body.text[0]}.. Сейчас на месте ${body.currently.temperature} градусов по Цельсию с  ${body.currently.precipProbability * 100}% шансом выпадения осадков. Видимость в ${body.daily.data[0].visibility} метров.`);
+            // });
         }
     });
 };
